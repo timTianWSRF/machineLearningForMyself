@@ -979,3 +979,21 @@ import re
 #     result = train_K_means(data)
 #     print(result)
 #     print(type(result))
+
+
+# 这个函数用于对列表的每个元素进行计数
+# def findListNum(li):
+#     li = list(li)
+#     set1 = set(li)
+#     dict1 = {}
+#     for item in set1:
+#         dict1.update({item: li.count(item)})
+#     return dict1
+#
+#
+# dic = [1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1]
+# print(findListNum(dic))
+
+dic = [[1, 1, 1, 1], [1, 0, 0, 0], [0, 0, 0, 0], [1, 1, 9, 1]]
+c = [i[-1] for i in dic]
+print(c[0])

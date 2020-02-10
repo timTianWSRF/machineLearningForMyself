@@ -83,12 +83,12 @@ if __name__ == '__main__':
     data = pd.DataFrame({'x': data['value'], 'y': data['price']})
     data = data.to_numpy()
 
-    k = 3
+    k = 2
     a, b = dichotomyKMeans(data, k)
     print(a)
     print(type(a))
 
-    fig = plt.figure(figsize=(10, 10), dpi=100)
+    fig = plt.figure(figsize=(16, 16), dpi=100)
     ax = fig.add_subplot(111)
     ax.set_xlabel("$value$")
     ax.set_xticks(range(0, 250000, 25000))
